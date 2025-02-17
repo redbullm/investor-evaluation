@@ -2,7 +2,7 @@ import google.generativeai as genai
 import os
 
 # Load API Key
-GEMINI_API_KEY = os.getenv("AIzaSyDTrObesMZXUO_Bv7Ez5qX8boG7ZYyGnIE") or "AIzaSyDTrObesMZXUO_Bv7Ez5qX8boG7ZYyGnIE"
+GEMINI_API_KEY = os.getenv("your api key") or "your api key"
 genai.configure(api_key=GEMINI_API_KEY)
 
 def extract_investor_relevant_info(text):
