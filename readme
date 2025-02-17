@@ -1,0 +1,69 @@
+# Fluid Ai Coding Assignment
+
+## 📌 Overview
+The **project** is a Python-based tool that extracts financial insights from PDF documents using Google Gemini AI. It processes investor-related information from reports and returns structured data for analysis.
+
+## 🚀 Features
+- **Extracts key investor information** from PDF reports.
+- **Uses Google Gemini AI** for intelligent text processing.
+- **Automated OCR processing** for scanned documents.
+
+
+## 📂 Project Structure
+```
+📁 investor-evaluation
+│── 📄 main.py                 # Main script to process PDF and extract insights
+│── 📄 gemini_integration.py    # Handles Google Gemini API requests
+│── 📄 requirements.txt         # Dependencies
+│── 📄 README.md                # Documentation
+```
+
+## 🔧 Setup & Installation
+
+### 1 **Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+### 2 **Set Up Google Gemini API Key**
+- Get an API key from [Google AI Studio](https://aistudio.google.com/)
+- Set the key as an environment variable:
+```bash
+export GEMINI_API_KEY='your-api-key-here'
+```
+
+## 🏃‍♂️ Running the Application
+To process a PDF, run:
+```bash
+python main.py /path/to/your/pdf.pdf
+```
+
+## 🔍 Example Output
+```
+Extracting text from PDF...
+Processing with Google Gemini AI...
+
+Extracted Data:
+- Company Name: XYZ Ltd.
+- Revenue: $10M
+- Net Profit: $2M
+- CEO: John Doe
+```
+
+## 🛠️ Troubleshooting
+### ❌ Quota Exceeded Error
+- Ensure your **Google Cloud billing** is enabled.
+- Check your [Google Cloud Quota](https://console.cloud.google.com/iam-admin/quotas).
+- Reduce request frequency or upgrade to a paid plan.
+
+### ❌ API Key Error
+- Ensure the **correct API key** is set.
+- If using Colab, run `!pip install google-generativeai` first.
+
+
+
+
+
+## 📧 Contact
+For queries, contact [puranik810@gmail.com]
+
